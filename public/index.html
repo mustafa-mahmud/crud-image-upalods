@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>File Upload</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- styles css -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form data-id="" class="form file-form" enctype="multipart/form-data">
+      <p class="msg-show">show message here.............</p>
+      <h4>File Upload</h4>
+      <!-- single row -->
+      <div class="form-row">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-input"
+          placeholder="Your Product name"
+        />
+      </div>
+      <!-- end of single row -->
+      <!-- single row -->
+      <div class="form-row">
+        <label for="price" class="form-label">Price</label>
+        <input
+          type="number"
+          id="price"
+          class="form-input"
+          placeholder="Your Product price"
+        />
+      </div>
+      <!-- end of single row -->
+      <!-- single row -->
+      <div class="form-row">
+        <label for="image" class="form-label">Image</label>
+        <input
+          type="file"
+          id="image"
+          placeholder="Choose Product image"
+          accept="image/*"
+        />
+      </div>
+      <!-- end of single row -->
+
+      <button type="submit" class="btn btn-block">add product</button>
+    </form>
+
+    <section class="container">
+      <!--  <div class="card">
+        <p class="change">
+          <button data-id="asdf465465" title="edit ?" class="edit">✏️</button>
+          <button data-id="asdf465465" class="del" title="delete ?">🚮</button>
+        </p>
+        <img src="./uploads/1661599689625_computer-1.jpeg" alt="image" />
+        <footer>
+          <p>asdfasdf</p>
+          <span>533</span>
+        </footer>
+      </div> -->
+    </section>
+
+    <script src="axios.min.js"></script>
+    <script type="module" src="./browser_app.js"></script>
+  </body>
+</html>
